@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Watch Party — monorepo (client + server)",
   "scripts": {
-    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm install --include=dev && npm run build",
     "build": "cd client && npm install && npm run build",
     "start": "node server/index.js",
     "dev:server": "cd server && npm run dev",
